@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/text_flaw_jilu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消缺记录"
+            android:textStyle="bold" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/flaw_jilu"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/text_flaw_jilu"
+            android:layout_weight="1"
+            android:background="@drawable/shape_shape_edit"
+            android:gravity="top"
+            android:text="隧道内有轻微积水"
+            android:maxLines="3"
+            android:padding="5dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缺陷等级"
+            android:textStyle="bold" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/flaw_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_shape_edit"
+            android:text="一般"
+            android:maxLines="3"
+            android:padding="5dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记录时间"
+            android:textStyle="bold" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/flaw_jilu_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_shape_edit"
+            android:text="2017/11/11 14:26:55"
+            android:maxLines="3"
+            android:padding="5dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="现场图片"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/photo1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@mipmap/default_image" />
+
+        <ImageView
+            android:id="@+id/photo2"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@mipmap/default_image" />
+
+        <ImageView
+            android:id="@+id/photo3"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@mipmap/default_image" />
+    </LinearLayout>
+
+
+</LinearLayout>

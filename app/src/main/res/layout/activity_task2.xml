@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaskList.Task2Activity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:background="@color/title"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/arrow_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="任务详情"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/setting_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:background="@color/title"
+            android:src="@mipmap/set"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务名称:" />
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="建华大街"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="任务内容:" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1">
+
+        </ListView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+
+            <Button
+                android:elevation="100dp"
+                android:id="@+id/qidong"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="启动" />
+
+            <Button
+                android:id="@+id/zanting"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="暂停"
+                android:enabled="false"/>
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/wancheng"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="完成" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

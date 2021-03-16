@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorDefaultTooltips">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="font_common_1">#424242</color>
+    <color name="font_common_2">#a1a1a1</color>
+    <color name="font_blue">#42369a</color>
+    <color name="commom_background">#f3f3f3</color>
+    <color name="transparent">#00000000</color> <!--透明-->
+    <color name="com_app_theme_color">#718DF3</color>
+    <color name="holo_blue_dark">#62375ff1</color>
+
+    <color name="colorDialogTitle">#455a64</color>
+    <color name="colorDialogContent">#546e7a</color>
+    <color name="colorDialogButtonPressed">#c5cae9</color>
+
+    <color name="text_blue">#7198F2</color> <!-- 字体色蓝色 -->
+    <color name="gray">#ADADAD</color> <!-- 灰色 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green">#22B8B2</color>
+    <color name="title">#006060</color>
+    <color name="view">#BBBBBB</color>
+    <color name="button_bg">#BBBBBB</color>
+    <color name="color_text_bold">#BBBBBB</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_low_gray">#F2F2F2</color>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xhj.zime.com.mymaptest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_128"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskList.TaskListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskList.TaskDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="xhj.zime.com.mymaptest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".TaskList.Task2Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main.TaskDownLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TaskList.TaskListFlawActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Settings.SettingAboutUsActivity"
+            android:screenOrientation="portrait" ></activity>
+    </application>
+
+</manifest>
